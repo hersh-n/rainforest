@@ -5,7 +5,7 @@ $(document).on('ready page:load', function() {
 		event.preventDefult();
 		var serachValue = $('#search').val();
 
-		$.get('/products?search=' + searchValue)
+		$.getScript('/products?search=' + searchValue)
 			.done(function(data){
 				console.log(data);
 			$('#products').html(data);
