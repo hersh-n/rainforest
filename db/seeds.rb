@@ -6,13 +6,13 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
-User.destrou_all
+User.destroy_all
 Product.destroy_all
 
 User.create! ({
 	email: "example@bitmakerlabs.com",
-	name: "Example User"
-	password: "pass"
+	name: "Example User",
+	password: "pass",
 	password_confirmation: 'pass'
 
 
