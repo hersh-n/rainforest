@@ -12,9 +12,6 @@ class ProductsController < ApplicationController
       format.html
       format.js
     end
-    if request.xhr?
-    render @products
-    end
   end
 
   def show
